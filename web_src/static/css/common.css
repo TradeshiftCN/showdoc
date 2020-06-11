@@ -34,7 +34,7 @@ img {
   background: #DDDDDD;
   background: -moz-linear-gradient(top, #ffffff, #dddddd);
   background: -webkit-linear-gradient(top, #ffffff, #dddddd);
-  background: linear-gradient:(top, #ffffff, #dddddd);
+  /*background: linear-gradient:(top, #ffffff, #dddddd);*/
   border: 0 none;
   font-size: 16px;
   font-family: "微软雅黑";

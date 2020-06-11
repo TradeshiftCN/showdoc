@@ -9,9 +9,7 @@
           <input type="hidden" name="item_id" value="7">
           <input type="text" class="searchIpt f14" name="keyword" maxlength="100" autocomplete="off"/>
           <input type="button" class="btn cp" @click="submitForm()" value="TS一下" />
-          <el-form-item label>
-            <el-button type="primary" style="width:100%;" @click="onSubmit">{{$t("login")}}</el-button>
-          </el-form-item>
+
         </form>
       </div>
     </div>
