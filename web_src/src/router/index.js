@@ -21,11 +21,17 @@ import Admin from '@/components/admin/Index'
 import Team from '@/components/team/Index'
 import TeamMember from '@/components/team/Member'
 import TeamItem from '@/components/team/Item'
+import Search from '@/components/Search'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/search',
+      name: 'search',
+      component: Search
+    },
     {
       path: '/',
       name: 'Index',
