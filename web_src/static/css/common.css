@@ -57,6 +57,9 @@ img {
   transform: translate(-50%,-80%);
   text-align: center;
 }
+.logo {
+  margin-bottom: 30px;
+}
 
 body {
   margin: 0;
