@@ -38,7 +38,7 @@
             if(result.data.menu.pages.length > 0) {
               let page_id = result.data.menu.pages[0].page_id;
             } else {
-              alert("很抱歉，没有找到与“alecxcaaaaa”相关的内容。");
+              alert("很抱歉，没有找到与" + $("#keyword").val() + "相关的内容。");
             }
             window.location.href = `http://kubectl.bwtsi.cn/web/#/7?page_id=${page_id}`;
           },
@@ -58,7 +58,7 @@
 
       //搜索框自动补全;
       $('.searchIpt').AutoComplete({
-        'data': ['About Me', '审美网', 'abcdefg', 'One', 'Two', 'Three', 'Four', 'Five', 'Six','smwell.com', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve'],
+        'data': ['TS简介', 'TS Milestone', 'Tradeshift Way', 'TS Minimal Stack', '直连开票', 'TS代码搜索引擎', '直通CEO', '团建指南'],
         'itemHeight': 24,
         'width': 529
       }).AutoComplete('show');
