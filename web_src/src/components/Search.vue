@@ -37,10 +37,10 @@
             console.log(result);//打印服务端返回的数据(调试用)
             if(result.data.menu.pages.length > 0) {
               let page_id = result.data.menu.pages[0].page_id;
+              window.location.href = `http://kubectl.bwtsi.cn/web/#/7?page_id=${page_id}`;
             } else {
               alert("很抱歉，没有找到与" + $("#keyword").val() + "相关的内容。");
             }
-            window.location.href = `http://kubectl.bwtsi.cn/web/#/7?page_id=${page_id}`;
           },
           error: function () {
             alert("请求异常！");
