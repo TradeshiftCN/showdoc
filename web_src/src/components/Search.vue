@@ -31,12 +31,12 @@
           dataType: "json",
           processData: false,
           contentType: false,
-          url: "http://kubectl.bwtsi.cn:4999/server/index.php?s=/api/item/info",
+          url: "http://kubectl.bwtsi.cn/server/index.php?s=/api/item/info",
           data: formdata,
           success: function (result) {
             console.log(result);//打印服务端返回的数据(调试用)
             page_id = result.data.menu.pages[0].page_id;
-            window.location.href = `http://kubectl.bwtsi.cn:4999/web/#/7?page_id=${page_id}`;
+            window.location.href = `http://kubectl.bwtsi.cn/web/#/7?page_id=${page_id}`;
           },
           error: function () {
             alert("异常！");
