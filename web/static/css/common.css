@@ -1,3 +1,63 @@
+html, body { height: 100%;}
+
+img {
+  /* max-width: 84%; */
+  width: 30%;
+  height: auto;
+  width: auto 9;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  -moz-animation: fadein 350ms ease-out;
+  -webkit-animation: fadein 350ms ease-out;
+  -o-animation: fadein 350ms ease-out;
+  animation: fadein 350ms ease-out;
+}
+.searchIpt {
+  width: 515px;
+  font-family: "微软雅黑";
+  border: 0 none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 9px 10px 7px;
+  margin-right: 3px;
+}
+
+.tc {
+  text-align: center;
+}
+.cp {
+  cursor: pointer;
+}
+.btn {
+  background: #DDDDDD;
+  background: -moz-linear-gradient(top, #ffffff, #dddddd);
+  background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  /*background: linear-gradient:(top, #ffffff, #dddddd);*/
+  border: 0 none;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  width: 105px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.content {
+  padding: 0 0 30px;
+  width: 910px;
+  margin: -10px auto auto;
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  transform: translate(-50%,-80%);
+  text-align: center;
+}
+
 body {
   margin: 0;
 }
