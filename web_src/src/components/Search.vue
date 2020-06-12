@@ -8,7 +8,7 @@
         <form id="form" >
           <input type="hidden" name="item_id" value="7">
           <input type="text" id="keyword" class="searchIpt f14" name="keyword" maxlength="100" autocomplete="off"/>
-          <input type="button" class="btn cp" @click="submitForm()" value="TS一下" />
+          <input type="button" class="btn cp" @click="submitForm()" value="嗖一下" />
 
         </form>
       </div>
@@ -35,11 +35,15 @@
           data: formdata,
           success: function (result) {
             console.log(result);//打印服务端返回的数据(调试用)
-            let page_id = result.data.menu.pages[0].page_id;
+            if(result.data.menu.pages.length > 0) {
+              let page_id = result.data.menu.pages[0].page_id;
+            } else {
+              alert("很抱歉，没有找到与“alecxcaaaaa”相关的内容。");
+            }
             window.location.href = `http://kubectl.bwtsi.cn/web/#/7?page_id=${page_id}`;
           },
           error: function () {
-            alert("异常！");
+            alert("请求异常！");
           }
         });
       }
