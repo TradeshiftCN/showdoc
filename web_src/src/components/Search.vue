@@ -2,7 +2,7 @@
   <div id="wrapper">
 
     <div class="content tc">
-      <p class="logo"><img src="static/logo/TS_logo_2016_blue.png" alt="logo" /></p>
+      <p class="logo"><img class="img-logo" src="static/logo/TS_logo_2016_blue.png" alt="logo" /></p>
 
       <div class="searchBox">
         <form id="form" >
